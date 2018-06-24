@@ -1,0 +1,1806 @@
+2018-06-23 12:31:20 [::1][1][b4idp1etj8k2dtuqftvs5jesqb][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: backend\controllers\SiteController::getUser() in D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php:300
+Stack trace:
+#0 D:\Server\data\htdocs\crm\backend\controllers\SiteController.php(81): yii\base\Component->__call('getUser', Array)
+#1 [internal function]: backend\controllers\SiteController->actionLogin()
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2018-06-23 12:31:19 [::1][1][b4idp1etj8k2dtuqftvs5jesqb][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'qXjcDRQBPDDYmUc2NcM6K6fQYEgmi4k57nxBum3NyTvFOpReIDdqY6n_HmZykFZgkIcKG3fv_kmgUSbzC5L8cQ=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin88'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    'advanced-frontend' => 'm683fnck7gpp9m0skl5urb8m93'
+    '_identity-frontend' => 'e00fc7e3ec51f67753ca59ae13d61116b12b0d503815a1d264167d5af3eeb5b2a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2\",2592000]\";}'
+    '_csrf' => 'cc88c57a91388d11953bb692d74709a1093fa1274fbd96cf784c51b67d66eaeea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xryLJRolmfPtWRil9crxnOFCj5GV01to\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/crm/backend/web/clients/index/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '238'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; advanced-frontend=m683fnck7gpp9m0skl5urb8m93; _identity-frontend=e00fc7e3ec51f67753ca59ae13d61116b12b0d503815a1d264167d5af3eeb5b2a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2%22%2C2592000%5D%22%3B%7D; _csrf=cc88c57a91388d11953bb692d74709a1093fa1274fbd96cf784c51b67d66eaeea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xryLJRolmfPtWRil9crxnOFCj5GV01to%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '17912'
+    'REDIRECT_URL' => '/crm/backend/web/login/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/backend/web/login/'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529757079.117
+    'REQUEST_TIME' => 1529757079
+]
+2018-06-23 12:54:03 [::1][-][51otlas0s1uuhao3ltl691mos8][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'backend\models\User' in file: D:\Server\data\htdocs\crm/backend/models/User.php. Namespace missing? in D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(595): spl_autoload_call('backend\\models\\...')
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\panels\UserPanel.php(81): yii\base\Component->__get('isGuest')
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#11 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#12 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\Module.php(177): yii\BaseYii::createObject(Array)
+#14 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\Module.php(149): yii\debug\Module->initPanels()
+#15 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#16 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#17 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#19 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#20 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#21 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#22 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#23 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#24 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#25 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#26 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#27 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->__construct(Array)
+#28 {main}
+2018-06-23 12:54:03 [::1][-][51otlas0s1uuhao3ltl691mos8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    '_csrf' => 'aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a\";}'
+    'advanced-frontend' => 'qe80nop23q5jdcduljhkaeki2b'
+    '_identity-backend' => '22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; _csrf=aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a%22%3B%7D; advanced-frontend=qe80nop23q5jdcduljhkaeki2b; _identity-backend=22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '18291'
+    'REDIRECT_URL' => '/crm/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/admin'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529758443.782
+    'REQUEST_TIME' => 1529758443
+]
+2018-06-23 12:54:43 [::1][-][51otlas0s1uuhao3ltl691mos8][error][Error] Error: Call to undefined method app\models\User::findIdentity() in D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php:595
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#1 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\panels\UserPanel.php(81): yii\base\Component->__get('isGuest')
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#9 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#11 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\Module.php(177): yii\BaseYii::createObject(Array)
+#12 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\Module.php(149): yii\debug\Module->initPanels()
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#14 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#15 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#16 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#17 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#19 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#20 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#21 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#22 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#23 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#24 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#25 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->__construct(Array)
+#26 {main}
+2018-06-23 12:54:43 [::1][-][51otlas0s1uuhao3ltl691mos8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    '_csrf' => 'aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a\";}'
+    'advanced-frontend' => 'qe80nop23q5jdcduljhkaeki2b'
+    '_identity-backend' => '22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; _csrf=aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a%22%3B%7D; advanced-frontend=qe80nop23q5jdcduljhkaeki2b; _identity-backend=22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '18295'
+    'REDIRECT_URL' => '/crm/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/admin'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529758483.799
+    'REQUEST_TIME' => 1529758483
+]
+2018-06-23 12:56:02 [::1][-][51otlas0s1uuhao3ltl691mos8][error][Error] Error: Undefined class constant 'STATUS_ACTIVE' in D:\Server\data\htdocs\crm\backend\models\User.php:78
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(595): app\models\User::findIdentity(1)
+#1 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\panels\UserPanel.php(81): yii\base\Component->__get('isGuest')
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#8 [internal function]: yii\base\BaseObject->__construct(Array)
+#9 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#11 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#12 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\Module.php(177): yii\BaseYii::createObject(Array)
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\Module.php(149): yii\debug\Module->initPanels()
+#14 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#15 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#16 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#17 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#19 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#20 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#21 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#22 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#23 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#24 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#25 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#26 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->__construct(Array)
+#27 {main}
+2018-06-23 12:56:02 [::1][-][51otlas0s1uuhao3ltl691mos8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    '_csrf' => 'aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a\";}'
+    'advanced-frontend' => 'qe80nop23q5jdcduljhkaeki2b'
+    '_identity-backend' => '22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; _csrf=aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a%22%3B%7D; advanced-frontend=qe80nop23q5jdcduljhkaeki2b; _identity-backend=22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '18303'
+    'REDIRECT_URL' => '/crm/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/admin'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529758562.102
+    'REQUEST_TIME' => 1529758562
+]
+2018-06-23 12:57:01 [::1][-][51otlas0s1uuhao3ltl691mos8][error][yii\base\InvalidValueException] yii\base\InvalidValueException: app\models\User::findIdentity() must return an object implementing IdentityInterface. in D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php:598
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#1 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\panels\UserPanel.php(81): yii\base\Component->__get('isGuest')
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#9 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#11 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\Module.php(177): yii\BaseYii::createObject(Array)
+#12 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\Module.php(149): yii\debug\Module->initPanels()
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#14 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#15 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#16 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#17 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#19 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#20 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#21 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#22 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#23 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#24 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#25 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->__construct(Array)
+#26 {main}
+2018-06-23 12:57:01 [::1][-][51otlas0s1uuhao3ltl691mos8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    '_csrf' => 'aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a\";}'
+    'advanced-frontend' => 'qe80nop23q5jdcduljhkaeki2b'
+    '_identity-backend' => '22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; _csrf=aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a%22%3B%7D; advanced-frontend=qe80nop23q5jdcduljhkaeki2b; _identity-backend=22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '18320'
+    'REDIRECT_URL' => '/crm/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/admin'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529758621.104
+    'REQUEST_TIME' => 1529758621
+]
+2018-06-23 12:57:36 [::1][-][51otlas0s1uuhao3ltl691mos8][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\User::password in D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('password')
+#1 D:\Server\data\htdocs\crm\backend\models\User.php(106): yii\db\BaseActiveRecord->__get('password')
+#2 D:\Server\data\htdocs\crm\backend\models\User.php(114): app\models\User->getAuthKey()
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(599): app\models\User->validateAuthKey('WYxedNIEnZcZ20d...')
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#9 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\panels\UserPanel.php(81): yii\base\Component->__get('isGuest')
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#11 [internal function]: yii\base\BaseObject->__construct(Array)
+#12 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#14 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#15 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\Module.php(177): yii\BaseYii::createObject(Array)
+#16 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\Module.php(149): yii\debug\Module->initPanels()
+#17 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#19 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#20 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#21 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#22 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#23 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#24 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#25 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#26 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#27 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#28 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#29 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->__construct(Array)
+#30 {main}
+2018-06-23 12:57:36 [::1][-][51otlas0s1uuhao3ltl691mos8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    '_csrf' => 'aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a\";}'
+    'advanced-frontend' => 'qe80nop23q5jdcduljhkaeki2b'
+    '_identity-backend' => '22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; _csrf=aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a%22%3B%7D; advanced-frontend=qe80nop23q5jdcduljhkaeki2b; _identity-backend=22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '18326'
+    'REDIRECT_URL' => '/crm/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/admin'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529758656.4
+    'REQUEST_TIME' => 1529758656
+]
+2018-06-23 12:59:01 [::1][-][51otlas0s1uuhao3ltl691mos8][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\models\User' in file: D:\Server\data\htdocs\crm\backend/models/User.php. Namespace missing? in D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\User')
+#1 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(595): spl_autoload_call('app\\models\\User')
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\panels\UserPanel.php(81): yii\base\Component->__get('isGuest')
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#11 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#12 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\Module.php(177): yii\BaseYii::createObject(Array)
+#14 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2-debug\Module.php(149): yii\debug\Module->initPanels()
+#15 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#16 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#17 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#19 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#20 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#21 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#22 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#23 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#24 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#25 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#26 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#27 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->__construct(Array)
+#28 {main}
+2018-06-23 12:59:00 [::1][-][51otlas0s1uuhao3ltl691mos8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    '_csrf' => 'aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a\";}'
+    'advanced-frontend' => 'qe80nop23q5jdcduljhkaeki2b'
+    '_identity-backend' => '22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; _csrf=aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a%22%3B%7D; advanced-frontend=qe80nop23q5jdcduljhkaeki2b; _identity-backend=22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '18334'
+    'REDIRECT_URL' => '/crm/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/admin'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529758740.909
+    'REQUEST_TIME' => 1529758740
+]
+2018-06-23 13:01:10 [::1][-][51otlas0s1uuhao3ltl691mos8][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\search\UserSearch::country in D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('country')
+#1 D:\Server\data\htdocs\crm\backend\models\search\UserSearch.php(76): yii\db\BaseActiveRecord->__get('country')
+#2 D:\Server\data\htdocs\crm\backend\controllers\UserController.php(39): app\models\search\UserSearch->search(Array)
+#3 [internal function]: backend\controllers\UserController->actionIndex()
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/index', Array)
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2018-06-23 13:01:10 [::1][-][51otlas0s1uuhao3ltl691mos8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    '_csrf' => 'aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a\";}'
+    'advanced-frontend' => 'qe80nop23q5jdcduljhkaeki2b'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/crm/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; _csrf=aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a%22%3B%7D; advanced-frontend=qe80nop23q5jdcduljhkaeki2b'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '18363'
+    'REDIRECT_URL' => '/crm/backend/web/user/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/backend/web/user/index/'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529758870.102
+    'REQUEST_TIME' => 1529758870
+]
+2018-06-23 13:01:47 [::1][-][51otlas0s1uuhao3ltl691mos8][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\User::country in D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('country')
+#1 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('country')
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\DataColumn.php(232): yii\helpers\BaseArrayHelper::getValue(Object(app\models\User), 'country')
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(app\models\User), 1, 0)
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\User), 1, 0)
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(520): yii\grid\Column->renderDataCell(Object(app\models\User), 1, 0)
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(489): yii\grid\GridView->renderTableRow(Object(app\models\User), 1, 0)
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(353): yii\grid\GridView->renderTableBody()
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(321): yii\widgets\BaseListView->renderSection('{items}')
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(296): yii\widgets\BaseListView->run()
+#14 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#15 D:\Server\data\htdocs\crm\backend\views\user\index.php(23): yii\base\Widget::widget(Array)
+#16 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(336): require('D:\\Server\\data\\...')
+#17 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Server\\data\\...', Array)
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Server\\data\\...', Array, Object(backend\controllers\UserController))
+#19 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#20 D:\Server\data\htdocs\crm\backend\controllers\UserController.php(43): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\UserController->actionIndex()
+#22 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/index', Array)
+#26 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->run()
+#28 {main}
+2018-06-23 13:01:47 [::1][-][51otlas0s1uuhao3ltl691mos8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    '_csrf' => 'aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a\";}'
+    'advanced-frontend' => 'qe80nop23q5jdcduljhkaeki2b'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/crm/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; _csrf=aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a%22%3B%7D; advanced-frontend=qe80nop23q5jdcduljhkaeki2b'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '18370'
+    'REDIRECT_URL' => '/crm/backend/web/user/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/backend/web/user/index/'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529758907.593
+    'REQUEST_TIME' => 1529758907
+]
+2018-06-23 13:01:49 [::1][-][51otlas0s1uuhao3ltl691mos8][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\User::country in D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('country')
+#1 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('country')
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\DataColumn.php(232): yii\helpers\BaseArrayHelper::getValue(Object(app\models\User), 'country')
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(app\models\User), 1, 0)
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\User), 1, 0)
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(520): yii\grid\Column->renderDataCell(Object(app\models\User), 1, 0)
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(489): yii\grid\GridView->renderTableRow(Object(app\models\User), 1, 0)
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(353): yii\grid\GridView->renderTableBody()
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(321): yii\widgets\BaseListView->renderSection('{items}')
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(296): yii\widgets\BaseListView->run()
+#14 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#15 D:\Server\data\htdocs\crm\backend\views\user\index.php(23): yii\base\Widget::widget(Array)
+#16 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(336): require('D:\\Server\\data\\...')
+#17 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Server\\data\\...', Array)
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Server\\data\\...', Array, Object(backend\controllers\UserController))
+#19 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#20 D:\Server\data\htdocs\crm\backend\controllers\UserController.php(43): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\UserController->actionIndex()
+#22 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/index', Array)
+#26 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->run()
+#28 {main}
+2018-06-23 13:01:49 [::1][-][51otlas0s1uuhao3ltl691mos8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    '_csrf' => 'aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a\";}'
+    'advanced-frontend' => 'qe80nop23q5jdcduljhkaeki2b'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/crm/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; _csrf=aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a%22%3B%7D; advanced-frontend=qe80nop23q5jdcduljhkaeki2b'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '18372'
+    'REDIRECT_URL' => '/crm/backend/web/user/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/backend/web/user/index/'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529758909.309
+    'REQUEST_TIME' => 1529758909
+]
+2018-06-23 14:40:12 [::1][-][51otlas0s1uuhao3ltl691mos8][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\User::country in D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('country')
+#1 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('country')
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\DataColumn.php(232): yii\helpers\BaseArrayHelper::getValue(Object(app\models\User), 'country')
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(app\models\User), 1, 0)
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\User), 1, 0)
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(520): yii\grid\Column->renderDataCell(Object(app\models\User), 1, 0)
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(489): yii\grid\GridView->renderTableRow(Object(app\models\User), 1, 0)
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(353): yii\grid\GridView->renderTableBody()
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(321): yii\widgets\BaseListView->renderSection('{items}')
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(296): yii\widgets\BaseListView->run()
+#14 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#15 D:\Server\data\htdocs\crm\backend\views\user\index.php(23): yii\base\Widget::widget(Array)
+#16 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(336): require('D:\\Server\\data\\...')
+#17 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Server\\data\\...', Array)
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Server\\data\\...', Array, Object(backend\controllers\UserController))
+#19 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#20 D:\Server\data\htdocs\crm\backend\controllers\UserController.php(43): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\UserController->actionIndex()
+#22 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/index', Array)
+#26 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->run()
+#28 {main}
+2018-06-23 14:40:11 [::1][-][51otlas0s1uuhao3ltl691mos8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    '_csrf' => 'aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a\";}'
+    'advanced-frontend' => 'qe80nop23q5jdcduljhkaeki2b'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/crm/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; _csrf=aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a%22%3B%7D; advanced-frontend=qe80nop23q5jdcduljhkaeki2b'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '19233'
+    'REDIRECT_URL' => '/crm/backend/web/user/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/backend/web/user/index/'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529764811.869
+    'REQUEST_TIME' => 1529764811
+]
+2018-06-23 14:40:12 [::1][-][51otlas0s1uuhao3ltl691mos8][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\User::country in D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('country')
+#1 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('country')
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\DataColumn.php(232): yii\helpers\BaseArrayHelper::getValue(Object(app\models\User), 'country')
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(app\models\User), 1, 0)
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\User), 1, 0)
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(520): yii\grid\Column->renderDataCell(Object(app\models\User), 1, 0)
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(489): yii\grid\GridView->renderTableRow(Object(app\models\User), 1, 0)
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(353): yii\grid\GridView->renderTableBody()
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(321): yii\widgets\BaseListView->renderSection('{items}')
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(296): yii\widgets\BaseListView->run()
+#14 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#15 D:\Server\data\htdocs\crm\backend\views\user\index.php(23): yii\base\Widget::widget(Array)
+#16 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(336): require('D:\\Server\\data\\...')
+#17 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Server\\data\\...', Array)
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Server\\data\\...', Array, Object(backend\controllers\UserController))
+#19 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#20 D:\Server\data\htdocs\crm\backend\controllers\UserController.php(43): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\UserController->actionIndex()
+#22 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/index', Array)
+#26 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->run()
+#28 {main}
+2018-06-23 14:40:12 [::1][-][51otlas0s1uuhao3ltl691mos8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    '_csrf' => 'aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a\";}'
+    'advanced-frontend' => 'qe80nop23q5jdcduljhkaeki2b'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/crm/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; _csrf=aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a%22%3B%7D; advanced-frontend=qe80nop23q5jdcduljhkaeki2b'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '19237'
+    'REDIRECT_URL' => '/crm/backend/web/user/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/backend/web/user/index/'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529764812.861
+    'REQUEST_TIME' => 1529764812
+]
+2018-06-23 14:43:16 [::1][-][51otlas0s1uuhao3ltl691mos8][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\User::country in D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('country')
+#1 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\helpers\BaseHtml.php(2193): yii\db\BaseActiveRecord->__get('country')
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\helpers\BaseHtml.php(1323): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\User), 'country')
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('text', Object(app\models\User), 'country', Array)
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(app\models\User), 'country', Array)
+#5 D:\Server\data\htdocs\crm\backend\views\user\_form.php(31): yii\widgets\ActiveField->textInput(Array)
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(336): require('D:\\Server\\data\\...')
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Server\\data\\...', Array)
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Server\\data\\...', Array, NULL)
+#9 D:\Server\data\htdocs\crm\backend\views\user\create.php(18): yii\base\View->render('_form', Array)
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(336): require('D:\\Server\\data\\...')
+#11 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Server\\data\\...', Array)
+#12 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Server\\data\\...', Array, Object(backend\controllers\UserController))
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\UserController))
+#14 D:\Server\data\htdocs\crm\backend\controllers\UserController.php(74): yii\base\Controller->render('create', Array)
+#15 [internal function]: backend\controllers\UserController->actionCreate()
+#16 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#19 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/create', Array)
+#20 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+2018-06-23 14:43:16 [::1][-][51otlas0s1uuhao3ltl691mos8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    '_csrf' => 'aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a\";}'
+    'advanced-frontend' => 'qe80nop23q5jdcduljhkaeki2b'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/crm/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/user/index/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; _csrf=aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a%22%3B%7D; advanced-frontend=qe80nop23q5jdcduljhkaeki2b'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '19265'
+    'REDIRECT_URL' => '/crm/backend/web/user/create/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/backend/web/user/create/'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529764996.661
+    'REQUEST_TIME' => 1529764996
+]
+2018-06-23 14:49:33 [::1][1][62kvosha4e63o6128v917qbahj][error][Error] Error: Class 'backend\controllers\AccessControl' not found in D:\Server\data\htdocs\crm\backend\controllers\UserController.php:24
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php(733): backend\controllers\UserController->behaviors()
+#1 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php(603): yii\base\Component->ensureBehaviors()
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/index', Array)
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2018-06-23 14:49:33 [::1][1][62kvosha4e63o6128v917qbahj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    '_csrf' => 'aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a\";}'
+    'advanced-frontend' => 'qe80nop23q5jdcduljhkaeki2b'
+    '_identity-backend' => '22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin-id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/clients/index/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; _csrf=aad93630625030fe9777d17ff61b579ad04a8cc67ab9a973cbd56da0028ef0e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GzP90Xzq2-1nzeHGk7RXhNV5OetjyL6a%22%3B%7D; advanced-frontend=qe80nop23q5jdcduljhkaeki2b; _identity-backend=22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '19332'
+    'REDIRECT_URL' => '/crm/backend/web/user/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/backend/web/user/index/'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529765373.792
+    'REQUEST_TIME' => 1529765373
+]
+2018-06-24 08:17:36 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '1': WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2
+2018-06-24 08:17:36 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    '_identity-backend' => '22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2\",2592000]\";}'
+    'advanced-frontend' => 'ka3f5adkt822rm3vtpdk50ks0e'
+    '_csrf' => 'c32f118da9a5798ccce984355c987305b36e21062be9a4122bc12cf1500be180a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"seGUXZgYmz5kAugyAY_fDZ8g_kGRe75c\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/crm/admin'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; _identity-backend=22a54dfa227e6cc77667d1b3d1b8dabf9c24351c49038d4b836c3bc4417e524da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22WYxedNIEnZcZ20d7_jD-U0tu2uvRBkv2%22%2C2592000%5D%22%3B%7D; advanced-frontend=ka3f5adkt822rm3vtpdk50ks0e; _csrf=c32f118da9a5798ccce984355c987305b36e21062be9a4122bc12cf1500be180a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22seGUXZgYmz5kAugyAY_fDZ8g_kGRe75c%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '45983'
+    'REDIRECT_URL' => '/crm/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/admin'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529828256.366
+    'REQUEST_TIME' => 1529828256
+]
+2018-06-24 08:20:04 [::1][1][msd4qkdetri2uqvsol93qa8n97][error][Error] Error: Class 'Clients' not found in D:\Server\data\htdocs\crm\backend\views\user\index.php:34
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(336): require()
+#1 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Server\\data\\...', Array)
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Server\\data\\...', Array, Object(backend\controllers\UserController))
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#4 D:\Server\data\htdocs\crm\backend\controllers\UserController.php(58): yii\base\Controller->render('index', Array)
+#5 [internal function]: backend\controllers\UserController->actionIndex()
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/index', Array)
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2018-06-24 08:20:04 [::1][1][msd4qkdetri2uqvsol93qa8n97][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    'advanced-frontend' => 'ka3f5adkt822rm3vtpdk50ks0e'
+    '_csrf' => 'c32f118da9a5798ccce984355c987305b36e21062be9a4122bc12cf1500be180a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"seGUXZgYmz5kAugyAY_fDZ8g_kGRe75c\";}'
+    '_identity-backend' => '700741e924498171ec17436eb7c20c77440f64dce697ecaf048de29ce34aea65a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"PLTsTKCILxKatRv9QCOzTphm05mFwLXj\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin-id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/clients/index/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; advanced-frontend=ka3f5adkt822rm3vtpdk50ks0e; _csrf=c32f118da9a5798ccce984355c987305b36e21062be9a4122bc12cf1500be180a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22seGUXZgYmz5kAugyAY_fDZ8g_kGRe75c%22%3B%7D; _identity-backend=700741e924498171ec17436eb7c20c77440f64dce697ecaf048de29ce34aea65a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PLTsTKCILxKatRv9QCOzTphm05mFwLXj%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '46014'
+    'REDIRECT_URL' => '/crm/backend/web/user/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/backend/web/user/index/'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529828404.34
+    'REQUEST_TIME' => 1529828404
+]
+2018-06-24 08:20:18 [::1][1][72onpjdsdqgv5r27llj2b1qvvc][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\User::country in D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('country')
+#1 D:\Server\data\htdocs\crm\backend\views\user\index.php(39): yii\db\BaseActiveRecord->__get('country')
+#2 [internal function]: yii\base\View->{closure}(Object(app\models\User), 1, 0, Object(yii\grid\DataColumn))
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\Column.php(165): call_user_func(Object(Closure), Object(app\models\User), 1, 0, Object(yii\grid\DataColumn))
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\DataColumn.php(247): yii\grid\Column->renderDataCellContent(Object(app\models\User), 1, 0)
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\User), 1, 0)
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(520): yii\grid\Column->renderDataCell(Object(app\models\User), 1, 0)
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(489): yii\grid\GridView->renderTableRow(Object(app\models\User), 1, 0)
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(353): yii\grid\GridView->renderTableBody()
+#9 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(321): yii\widgets\BaseListView->renderSection('{items}')
+#11 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(296): yii\widgets\BaseListView->run()
+#15 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#16 D:\Server\data\htdocs\crm\backend\views\user\index.php(19): yii\base\Widget::widget(Array)
+#17 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(336): require('D:\\Server\\data\\...')
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Server\\data\\...', Array)
+#19 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Server\\data\\...', Array, Object(backend\controllers\UserController))
+#20 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#21 D:\Server\data\htdocs\crm\backend\controllers\UserController.php(58): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\UserController->actionIndex()
+#23 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#26 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/index', Array)
+#27 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->run()
+#29 {main}
+2018-06-24 08:20:18 [::1][1][72onpjdsdqgv5r27llj2b1qvvc][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    'advanced-frontend' => 'ka3f5adkt822rm3vtpdk50ks0e'
+    '_csrf' => 'c32f118da9a5798ccce984355c987305b36e21062be9a4122bc12cf1500be180a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"seGUXZgYmz5kAugyAY_fDZ8g_kGRe75c\";}'
+    '_identity-backend' => '700741e924498171ec17436eb7c20c77440f64dce697ecaf048de29ce34aea65a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"PLTsTKCILxKatRv9QCOzTphm05mFwLXj\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin-id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/clients/index/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; advanced-frontend=ka3f5adkt822rm3vtpdk50ks0e; _csrf=c32f118da9a5798ccce984355c987305b36e21062be9a4122bc12cf1500be180a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22seGUXZgYmz5kAugyAY_fDZ8g_kGRe75c%22%3B%7D; _identity-backend=700741e924498171ec17436eb7c20c77440f64dce697ecaf048de29ce34aea65a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PLTsTKCILxKatRv9QCOzTphm05mFwLXj%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '46018'
+    'REDIRECT_URL' => '/crm/backend/web/user/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/backend/web/user/index/'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529828418.046
+    'REQUEST_TIME' => 1529828418
+]
+2018-06-24 08:21:20 [::1][1][4hpp8lf1d4qbhrki6lerglsimb][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\User::country in D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('country')
+#1 D:\Server\data\htdocs\crm\backend\views\user\index.php(39): yii\db\BaseActiveRecord->__get('country')
+#2 [internal function]: yii\base\View->{closure}(Object(app\models\User), 1, 0, Object(yii\grid\DataColumn))
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\Column.php(165): call_user_func(Object(Closure), Object(app\models\User), 1, 0, Object(yii\grid\DataColumn))
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\DataColumn.php(247): yii\grid\Column->renderDataCellContent(Object(app\models\User), 1, 0)
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\User), 1, 0)
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(520): yii\grid\Column->renderDataCell(Object(app\models\User), 1, 0)
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(489): yii\grid\GridView->renderTableRow(Object(app\models\User), 1, 0)
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(353): yii\grid\GridView->renderTableBody()
+#9 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(321): yii\widgets\BaseListView->renderSection('{items}')
+#11 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(296): yii\widgets\BaseListView->run()
+#15 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#16 D:\Server\data\htdocs\crm\backend\views\user\index.php(19): yii\base\Widget::widget(Array)
+#17 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(336): require('D:\\Server\\data\\...')
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Server\\data\\...', Array)
+#19 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Server\\data\\...', Array, Object(backend\controllers\UserController))
+#20 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#21 D:\Server\data\htdocs\crm\backend\controllers\UserController.php(58): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\UserController->actionIndex()
+#23 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#26 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/index', Array)
+#27 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->run()
+#29 {main}
+2018-06-24 08:21:20 [::1][1][4hpp8lf1d4qbhrki6lerglsimb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    'advanced-frontend' => 'ka3f5adkt822rm3vtpdk50ks0e'
+    '_csrf' => 'c32f118da9a5798ccce984355c987305b36e21062be9a4122bc12cf1500be180a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"seGUXZgYmz5kAugyAY_fDZ8g_kGRe75c\";}'
+    '_identity-backend' => '700741e924498171ec17436eb7c20c77440f64dce697ecaf048de29ce34aea65a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"PLTsTKCILxKatRv9QCOzTphm05mFwLXj\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin-id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/clients/index/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; advanced-frontend=ka3f5adkt822rm3vtpdk50ks0e; _csrf=c32f118da9a5798ccce984355c987305b36e21062be9a4122bc12cf1500be180a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22seGUXZgYmz5kAugyAY_fDZ8g_kGRe75c%22%3B%7D; _identity-backend=700741e924498171ec17436eb7c20c77440f64dce697ecaf048de29ce34aea65a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PLTsTKCILxKatRv9QCOzTphm05mFwLXj%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '46041'
+    'REDIRECT_URL' => '/crm/backend/web/user/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/backend/web/user/index/'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529828480.31
+    'REQUEST_TIME' => 1529828480
+]
+2018-06-24 08:23:47 [::1][1][kv65u2co82esvhoris15s2kfis][error][Error] Error: Class 'app\models\ArrayHelper' not found in D:\Server\data\htdocs\crm\backend\models\User.php:216
+Stack trace:
+#0 D:\Server\data\htdocs\crm\backend\views\user\index.php(44): app\models\User::getStatus(10)
+#1 [internal function]: yii\base\View->{closure}(Object(app\models\User), 1, 0, Object(yii\grid\DataColumn))
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\Column.php(165): call_user_func(Object(Closure), Object(app\models\User), 1, 0, Object(yii\grid\DataColumn))
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\DataColumn.php(247): yii\grid\Column->renderDataCellContent(Object(app\models\User), 1, 0)
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\User), 1, 0)
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(520): yii\grid\Column->renderDataCell(Object(app\models\User), 1, 0)
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(489): yii\grid\GridView->renderTableRow(Object(app\models\User), 1, 0)
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(353): yii\grid\GridView->renderTableBody()
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(321): yii\widgets\BaseListView->renderSection('{items}')
+#10 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\grid\GridView.php(296): yii\widgets\BaseListView->run()
+#14 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#15 D:\Server\data\htdocs\crm\backend\views\user\index.php(19): yii\base\Widget::widget(Array)
+#16 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(336): require('D:\\Server\\data\\...')
+#17 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Server\\data\\...', Array)
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Server\\data\\...', Array, Object(backend\controllers\UserController))
+#19 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#20 D:\Server\data\htdocs\crm\backend\controllers\UserController.php(58): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\UserController->actionIndex()
+#22 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/index', Array)
+#26 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->run()
+#28 {main}
+2018-06-24 08:23:47 [::1][1][kv65u2co82esvhoris15s2kfis][info][application] $_GET = [
+    'UserSearch' => [
+        'id' => ''
+        'username' => ''
+        'name' => ''
+        'email' => ''
+        'type' => ''
+        'company_name' => ''
+        'country_id' => '17'
+        'status' => ''
+    ]
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    'advanced-frontend' => 'ka3f5adkt822rm3vtpdk50ks0e'
+    '_csrf' => 'c32f118da9a5798ccce984355c987305b36e21062be9a4122bc12cf1500be180a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"seGUXZgYmz5kAugyAY_fDZ8g_kGRe75c\";}'
+    '_identity-backend' => '700741e924498171ec17436eb7c20c77440f64dce697ecaf048de29ce34aea65a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"PLTsTKCILxKatRv9QCOzTphm05mFwLXj\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin-id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/user/index/?UserSearch%5Bid%5D=&UserSearch%5Busername%5D=&UserSearch%5Bname%5D=&UserSearch%5Bemail%5D=&UserSearch%5Btype%5D=&UserSearch%5Bcompany_name%5D=&UserSearch%5Bcountry_id%5D=12&UserSearch%5Bstatus%5D='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; advanced-frontend=ka3f5adkt822rm3vtpdk50ks0e; _csrf=c32f118da9a5798ccce984355c987305b36e21062be9a4122bc12cf1500be180a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22seGUXZgYmz5kAugyAY_fDZ8g_kGRe75c%22%3B%7D; _identity-backend=700741e924498171ec17436eb7c20c77440f64dce697ecaf048de29ce34aea65a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PLTsTKCILxKatRv9QCOzTphm05mFwLXj%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '46105'
+    'REDIRECT_URL' => '/crm/backend/web/user/index/'
+    'REDIRECT_QUERY_STRING' => 'UserSearch%5Bid%5D=&UserSearch%5Busername%5D=&UserSearch%5Bname%5D=&UserSearch%5Bemail%5D=&UserSearch%5Btype%5D=&UserSearch%5Bcompany_name%5D=&UserSearch%5Bcountry_id%5D=17&UserSearch%5Bstatus%5D='
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'UserSearch%5Bid%5D=&UserSearch%5Busername%5D=&UserSearch%5Bname%5D=&UserSearch%5Bemail%5D=&UserSearch%5Btype%5D=&UserSearch%5Bcompany_name%5D=&UserSearch%5Bcountry_id%5D=17&UserSearch%5Bstatus%5D='
+    'REQUEST_URI' => '/crm/backend/web/user/index/?UserSearch%5Bid%5D=&UserSearch%5Busername%5D=&UserSearch%5Bname%5D=&UserSearch%5Bemail%5D=&UserSearch%5Btype%5D=&UserSearch%5Bcompany_name%5D=&UserSearch%5Bcountry_id%5D=17&UserSearch%5Bstatus%5D='
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529828627.371
+    'REQUEST_TIME' => 1529828627
+]
+2018-06-24 08:25:04 [::1][1][h1t0pg9pggfgt7bsk0a0bbstn6][error][Error] Error: Undefined class constant 'STATUS_DELETED' in D:\Server\data\htdocs\crm\backend\models\User.php:56
+Stack trace:
+#0 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Model.php(454): app\models\User->rules()
+#1 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Model.php(436): yii\base\Model->getValidators()
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Model.php(484): yii\base\Model->getActiveValidators('username')
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\ActiveField.php(915): yii\base\Model->isAttributeRequired('username')
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\widgets\ActiveField.php(402): yii\widgets\ActiveField->addAriaAttributes('<span class="st...')
+#6 D:\Server\data\htdocs\crm\backend\views\user\_form.php(15): yii\widgets\ActiveField->textInput('<span class="st...')
+#7 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(336): require('D:\\Server\\data\\...')
+#8 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Server\\data\\...', Array)
+#9 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Server\\data\\...', Array, NULL)
+#10 D:\Server\data\htdocs\crm\backend\views\user\update.php(18): yii\base\View->render('_form', Array)
+#11 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(336): require('D:\\Server\\data\\...')
+#12 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Server\\data\\...', Array)
+#13 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Server\\data\\...', Array, Object(backend\controllers\UserController))
+#14 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('update', Array, Object(backend\controllers\UserController))
+#15 D:\Server\data\htdocs\crm\backend\controllers\UserController.php(109): yii\base\Controller->render('update', Array)
+#16 [internal function]: backend\controllers\UserController->actionUpdate('1')
+#17 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#18 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('update', Array)
+#20 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/update', Array)
+#21 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->run()
+#23 {main}
+2018-06-24 08:25:04 [::1][1][h1t0pg9pggfgt7bsk0a0bbstn6][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    'advanced-frontend' => 'ka3f5adkt822rm3vtpdk50ks0e'
+    '_csrf' => 'c32f118da9a5798ccce984355c987305b36e21062be9a4122bc12cf1500be180a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"seGUXZgYmz5kAugyAY_fDZ8g_kGRe75c\";}'
+    '_identity-backend' => '700741e924498171ec17436eb7c20c77440f64dce697ecaf048de29ce34aea65a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"PLTsTKCILxKatRv9QCOzTphm05mFwLXj\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin-id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/user/index/?UserSearch%5Bid%5D=&UserSearch%5Busername%5D=&UserSearch%5Bname%5D=&UserSearch%5Bemail%5D=&UserSearch%5Btype%5D=&UserSearch%5Bcompany_name%5D=&UserSearch%5Bcountry_id%5D=17&UserSearch%5Bstatus%5D='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; advanced-frontend=ka3f5adkt822rm3vtpdk50ks0e; _csrf=c32f118da9a5798ccce984355c987305b36e21062be9a4122bc12cf1500be180a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22seGUXZgYmz5kAugyAY_fDZ8g_kGRe75c%22%3B%7D; _identity-backend=700741e924498171ec17436eb7c20c77440f64dce697ecaf048de29ce34aea65a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PLTsTKCILxKatRv9QCOzTphm05mFwLXj%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '46122'
+    'REDIRECT_URL' => '/crm/backend/web/user/update/'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/crm/backend/web/user/update/?id=1'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529828704.248
+    'REQUEST_TIME' => 1529828704
+]
+2018-06-24 08:31:32 [::1][1][6knpv40rts3k2o9dvcftigiih0][error][Error] Error: Class 'app\models\search\VarDumper' not found in D:\Server\data\htdocs\crm\backend\models\search\PaymentMethodsSearch.php:45
+Stack trace:
+#0 D:\Server\data\htdocs\crm\backend\controllers\PaymentMethodsController.php(55): app\models\search\PaymentMethodsSearch->search(Array)
+#1 [internal function]: backend\controllers\PaymentMethodsController->actionIndex()
+#2 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('payment-methods...', Array)
+#6 D:\Server\data\htdocs\crm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\Server\data\htdocs\crm\backend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2018-06-24 08:31:32 [::1][1][6knpv40rts3k2o9dvcftigiih0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '51otlas0s1uuhao3ltl691mos8'
+    '_csrf-backend' => '31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J\";}'
+    '_csrf-frontend' => '4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"vESonEit5kDeZDTJvZjMm3IIOcymyCoo\";}'
+    'advanced-frontend' => 'ka3f5adkt822rm3vtpdk50ks0e'
+    '_csrf' => 'c32f118da9a5798ccce984355c987305b36e21062be9a4122bc12cf1500be180a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"seGUXZgYmz5kAugyAY_fDZ8g_kGRe75c\";}'
+    '_identity-backend' => '700741e924498171ec17436eb7c20c77440f64dce697ecaf048de29ce34aea65a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"PLTsTKCILxKatRv9QCOzTphm05mFwLXj\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin-id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/crm/backend/web/payment-methods/view/?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=51otlas0s1uuhao3ltl691mos8; _csrf-backend=31c69eb029637423f2116c774d140c2e9fc999d8563074c7b7f5b80db46e2118a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lBHS46VSqfYPGSlK7WjSQdwpN-gIf_5J%22%3B%7D; _csrf-frontend=4fa5980aa361e95c1d1bbcbb4191fcb6d33b2678c2d6a8a493e96c4a97bf8c2ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22vESonEit5kDeZDTJvZjMm3IIOcymyCoo%22%3B%7D; advanced-frontend=ka3f5adkt822rm3vtpdk50ks0e; _csrf=c32f118da9a5798ccce984355c987305b36e21062be9a4122bc12cf1500be180a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22seGUXZgYmz5kAugyAY_fDZ8g_kGRe75c%22%3B%7D; _identity-backend=700741e924498171ec17436eb7c20c77440f64dce697ecaf048de29ce34aea65a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PLTsTKCILxKatRv9QCOzTphm05mFwLXj%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Autodesk Shared;C:\\Program Files\\Common Files\\Autodesk Shared;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\Работа\\lure\\putty\\putty\\;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/7.2.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Server/data/htdocs/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Server/data/htdocs/crm/backend/web/index.php'
+    'REMOTE_PORT' => '46223'
+    'REDIRECT_URL' => '/crm/backend/web/payment-methods/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crm/backend/web/payment-methods/index/'
+    'SCRIPT_NAME' => '/crm/backend/web/index.php'
+    'PHP_SELF' => '/crm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529829092.269
+    'REQUEST_TIME' => 1529829092
+]
